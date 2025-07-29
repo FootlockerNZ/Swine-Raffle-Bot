@@ -1,0 +1,1 @@
+{"config": {"licence": "", "entryRetries": 3, "entryDelay": [5,10], "confirmDelay":[10,11], "timeoutDelay": 5, "errorDelay": 5, "webhook": "", "captchaProvider": "capmonster", "captchaKey": "", "captchaRetries": 20}}
