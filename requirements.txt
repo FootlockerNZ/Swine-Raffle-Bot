@@ -1,0 +1,9 @@
+requests
+python-dotenv
+faker
+psutil
+discord-webhook
+colorama
+pypresence
+beautifulsoup4
+captcha-harvester
