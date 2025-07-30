@@ -195,7 +195,6 @@ def loaded():
     print_info()
     print('Raffle: '+title)
     print('Sizes: '+', '.join(sizesDisplay))
-    #add try except above
 
 
     while True:
@@ -1284,7 +1283,7 @@ if len(config['webhook']) == 0:
 
 
 while True:
-    proxyFormat = '' #check this doesnt fuck shit up
+    proxyFormat = ''
     profileFormat = ''
     entries = 0
     update()
@@ -1431,8 +1430,6 @@ while True:
             loaded()
         elif store == 'JD Sports NZ':
             jdsports()
-        #elif store == 'JD Sports NZ (Pre Auth)':
-        #    jdsports('pre auth')
         elif store == "Knowear":
             knowear()
         elif store == 'Empire Skate':
@@ -1457,8 +1454,6 @@ while True:
                     for j in range(len(links)):
                         if 'https://manage.kmail-lists.com/subscriptions/subscribed?opt=' in links[j]:
                             EmpireConfirm(j, links, config, userAgent, chromeVersion, proxies, userInfo, len(links)).confirm()
-                        #elif 'https://raffles-checkout.jdsports.co.nz/payment_success?' in links[j]:
-                        #    jd_confirmer(j, links, config, userAgent, chromeVersion, proxies, userInfo, len(links)).confirm()
                         else:
                             print('Invalid confirm link: '+links[j])
                             print()
