@@ -8,12 +8,12 @@ from csv import writer
 from discord_webhook import DiscordEmbed, DiscordWebhook
 from time import sleep
 from pathlib import Path
-#from .logger import logger
+from .logger import logger
 from dotenv import load_dotenv
 
 
 load_dotenv()
-#log = logger().log
+log = logger().log
 
 SEND_TASK_WEBHOOK = os.getenv('SEND_TASK_WEBHOOK')
 SEND_ENTRY_WEBHOOK = os.getenv('SEND_ENTRY_WEBHOOK')
