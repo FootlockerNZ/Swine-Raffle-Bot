@@ -22,8 +22,6 @@ SEND_RESET_WEBHOOK = os.getenv('SEND_RESET_WEBHOOK')
 SEND_FINISH_WEBHOOK = os.getenv('SEND_FINISH_WEBHOOK')
 SEND_ERROR_WEBHOOK = os.getenv('SEND_ERROR_WEBHOOK')
 
-def t():
-    print(SEND_ENTRY_WEBHOOK)
 
 def save_entry(raffleInfo, profile, PayPalLink, entryLink, reference, instagram):
     try:
